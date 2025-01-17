@@ -1,0 +1,151 @@
+body{
+
+    margin: 0;
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    height: 100vh;
+
+    background: linear-gradient(to right, #1100ff, #00ffea);
+
+}
+
+#container {
+    display: flex;
+    gap: 20px;
+    align-items: flex-start;
+    
+}
+
+#calculator{
+
+    font-family: Arial, sans-serif;
+
+    background-color: hsl(0, 0%, 15%);
+
+    border-radius: 15px;
+
+    max-width: 500px;
+
+    overflow: hidden;
+
+}
+
+#display{
+
+    width: 100%;
+
+    padding: 20px;
+
+    font-size: 5rem;
+
+    text-align: left;
+
+    border: none;
+
+    background-color: hsl(0, 0%, 20%);
+
+    color: white;
+
+}
+
+#keys{
+
+    display: grid;
+
+    grid-template-columns: repeat(4, 1fr);
+
+    gap: 10px;
+
+    padding: 25px;
+
+}
+
+button{
+
+    width: 100px;
+
+    height: 100px;
+
+    border-radius: 50px;
+
+    border: none;
+
+    background-color: hsl(115, 100%, 50%);
+
+    color: rgb(0, 0, 0);
+
+    font-size: 3rem;
+
+    font-weight: bold;
+
+    cursor: pointer;
+
+}
+
+button:hover{
+
+    background-color: hsl(59, 100%, 50%);
+
+}
+
+button:active{
+
+    background-color: hsl(0, 0%, 50%);
+
+}
+
+.operator-btn{
+
+    background: linear-gradient(to right, #ff0000, #e08c8c);
+
+}
+
+.operator-btn:hover{
+
+    background-color: hsl(35, 100%, 65%);
+
+}
+
+.operator-btn:active{
+
+    background-color: hsl(35, 100%, 75%);
+
+}
+
+#history {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    border: 2px solid hsl(0, 0%, 0%);
+    border-radius: 10px;
+    width: auto;
+    height: auto;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
+    padding: 15px;
+    background: linear-gradient(to right, #cc00ff, #ffa3f0);
+}
+
+#history h2 {
+    font-size: 3rem;
+    margin: 0 0 10px 0;
+    color: hsl(0, 0%, 0%);
+}
+
+#history-list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    max-height: 400px; /* Increased height for more visible history items */
+    overflow-y: auto; /* Scroll if history grows */
+}
+
+#history-list li {
+    font-size: 2rem; /* Increased font size for larger text */
+    padding: 10px 0; /* Increased padding for better spacing between items */
+    border-bottom: 1px solid hsla(0, 0%, 0%, 0.322);
+    color: hsl(0, 0%, 0%);
+    font-weight: bold;
+}
